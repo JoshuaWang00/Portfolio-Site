@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ft. Joshua Wang</title>
+    <link rel="icon" type="swordicon.png" href="swordicon.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href='style.css?v=0'>  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap" rel="stylesheet">
+
+
+</head>
+
+<div class="container-fluid text-center bg-dark" id ='welcomediv'>
+ <h2>Greetings From Joshua Wang</h2>
+</div>
+
+<div class="container-fluid text-center" id="aboutMe">
+    <h2 class="slide">About Me</h2>
+    <img src="pc.png" alt="pc" class="slide">
+ <p id='description' class="col-sm-6 container-fluid slide"> I'm a guy obsessed with all things tech. I've been a computer fanatic since elementary school! As an aspiring software engineer looking to break into the industry, I've gotten my bachelors and learned a 
+    couple of programming languages to help me excel. Some of them being Python, Java, Javascript, C, C#, C++, and SQL. As you might expect from someone who loves tech, my main hobby is gaming. I'm open to learning all types of new languages and tools, so I'm always ready to fit any role!
+ </p>
+   </div>
+
+   <div class="container-fluid text-center slideanim" id="weatherCond">
+    <h2>Check Out My Weather Conditions</h2>
+
+    <div class="row">
+    <div id="globe" class="col-md-6 my-auto">
+        <img src="globe.png" alt="globe">
+    </div>
+
+    <div id="Location" class="col-md-6 my-auto">
+    <h2>Rego Park, NY, USA</h2>
+    </div>
+    </div>
+
+<p id="ltime">Local Time: </p>
+<p id="temp">Temperature(f): </p>
+<p id="windir">Wind Direction: </p>
+<p id="mph">Wind MPH: </p>
+<p id="rain">Precipitation(in): </p>
+
+<button class="btn btn-success btn-lg" onclick="updateData()">Update</button>
+   </div>
+
+<div class="container-fluid text-center bg-dark" id="skillPreview">
+  <h2 class="slideanim" id="skillHeader">Some Of My Skills</h2>
+
+  <div class="card-deck">
+    <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">Python</h5>
+      <p class="card-text">I used Python for Natural Language Processing. With it I made a Naive Bayes classifier that could predict if a movie review was negative or positive with ~80% accuracy. I also made a bigram and unigram model to predict the probability of sentences. Both projects involved machine learning with thousands of training texts.</p>
+    </div>
+  </div>
+
+
+  <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">C++</h5>
+      <p class="card-text">I made puzzle solving algorithms in C++. Some of these puzzles include a maze solver and a chessboard 8 queens problem solver. This is the main language I used to practice data structures and algorithms.</p>
+    </div>
+  </div>
+
+  <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">C#</h5>
+      <p class="card-text">I developed some personal Unity scripts in C#. These scripts allowed me to implement game functions such as saving/loading, inventory, item databases, sound management, movement, stats, and UI.</p>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  See Video
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Unity and C#</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/lDg8LKLJCB4" allowfullscreen>
+</iframe>
+<br>
+This video showcases my Unity experience and C# scripts. The project I made is not a complete game, but rather closer to a demonstration of working scripts that could be used in one. No imported scripts were used. It's supposed to be for a strategy game that features an overworld for city management and then in game 3d scenerios for combat, similar to Mount and Blade and Total War.
+The overworld has test cities that have interaction options that pop up on the top left ui depending on if they are an enemy or player. The player also has an inventory that can be filled with items from an item database. Items can be easily made and populated in the database as a scriptable object, and even enemies may possess an inventory to be used as a loot table for drops.
+The UI bar on the bottom also has a settings menu that can save/load settings, change resolution, and alter the volume. Later on in the video there is test scene linked to the combat of the project that showcases player movement, and combat with an enemy where damage popups occur. When the enemy is defeated, items can populate the player's inventory from the enemy's inventory. There is even a health
+bar on the top left that changes as the player's health changes. Much credit goes to Youtube tutorials and Google for guiding me along the way. Side Note: The world map was digitally painted by yours truly with Krita.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal End-->
+
+    </div>
+  </div>
+
+  <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">Java</h5>
+      <p class="card-text">I integrated design patterns such as the memento design pattern to implement saving and loading in a shopping simulation.</p>
+    </div>
+  </div>
+
+</div>
+<div class="card-deck">
+
+
+  <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">HTML & CSS</h5>
+      <p class="card-text">I took a 100 hour web development bootcamp to familiarize myself with HTML & CSS. I made a mockup Nintendo site that is responsive and complete with a nav bar and animations. This website is also of course made using HTML and CSS.</p>
+    </div>
+  </div>
+
+  <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">Javascript</h5>
+      <p class="card-text">I'm using Javascript to make calls to the weather API of this site. I also use Javascript to change the contents of this site with the update button. I've also used react.js to make and deploy a tic tac toe app on github pages. Below is a link to the app.</p>
+      <a href="https://joshuawang00.github.io/react-tictactoe/" target="_blank" type="button" class="btn btn-primary">
+        See App
+      </a>
+    </div>
+  </div>
+
+  <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">Bootstrap</h5>
+      <p class="card-text">I utilized Bootstrap to make this site responsive and colorful with minimal effort. You can resize or open this site on a different device and everything will still be visible!</p>
+    </div>
+  </div>
+
+  <div class='card slideanim'>
+    <div class="card-body">
+      <h5 class="card-header">SQL</h5>
+      <p class="card-text">I can use SQL to create databases and users, as well as import databases from other sources. I know how to filter through tables to find info that meets specific criteria. I am also familiar with common backup practices and security.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="container-fluid text-center" id="contact">
+<div class="row socialrow">
+<div class="col-md-3 socials slideanim">
+  <h4>Contacts</h4>
+<p>Phone: +1 9179758882</p>
+<p>Gmail: joshuawang00@gmail.com</p>
+</div>
+<div class="col-md-3 socials slideanim">
+  <h4>Sites</h4>
+  <p>Github: https://github.com/JoshuaWang00</p>
+  <p>Linkedin: https://www.linkedin.com/in/joshua-wang-0271551b9/ </p>
+  </div>
+
+</div>
+
+</div>
+
+<div class="container-fluid text-center" id="thanks">
+  <h4>Thanks for visiting!</h4>
+  </div>
+
+  <body>
+      
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="main.js?v=1"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
